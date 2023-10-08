@@ -1,14 +1,12 @@
-# FILEPATH: /path/to/about_us.md
-
-"""
-This file contains the "About Us" page for our website. It provides information about our company, its history, and its mission.
-
-The page includes the following sections:
-- Introduction: A brief overview of our company and its purpose.
-- Our History: A timeline of our company's major milestones and achievements.
-- Our Team: Information about our team members and their roles.
-- Our Mission: A statement of our company's mission and values.
-- Contact Us: Information on how to get in touch with us.
-
-This file is intended to be displayed on our website as a static page. It can be updated as needed to reflect changes in our company's history, team, or mission.
-"""
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+    </head>
+    <body>
+        <h1>About Us</h1>
+        <p>Welcome to our website! We are a team of developers who are passionate about creating innovative solutions to everyday problems. Our goal is to make your life easier by providing you with the tools you need to succeed.</p>
+        <p>Our team consists of experienced developers who have worked on a variety of projects, from small websites to large-scale applications. We are constantly learning and growing, and we are always looking for new challenges to tackle.</p>
+        <p>If you have any questions or comments, please feel free to contact us. We would love to hear from you!</p>
+    </body>
+</html>
