@@ -1,0 +1,146 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-left: 10%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff7746;
+}
+
+/* Image Section Styles */
+.image-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.image-section img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Introduction Section Styles */
+.introduction {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.introduction h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.testimonial {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 18px;
+}
+
+.customer {
+    font-weight: bold;
+}
+
+/* Featured Providers Section Styles */
+.featured-providers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.provider img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.provider p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
