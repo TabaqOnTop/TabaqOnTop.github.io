@@ -20,28 +20,23 @@
     --robin-egg-blue: #07CCD1ff;
     --indigo-dye: #144F6Cff;
 }
-  body {
-    margin: 0; /* Reset body margin */
+body{
+    margin:0px;
+}
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    overflow: hidden;
   }
-
-  
-  header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    color: #fff;
-    padding: 25px;
-    margin: 0; /* Remove margins */
-  }
-  
   
   .logo {
     position: absolute;
-    top: 10%; /* Adjust the value to control the overflow */
+    top: 5%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    font-size: 20px; /* Adjust the font size as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    z-index: 1;
   }
   
   .logo img {
@@ -50,19 +45,16 @@
   
   nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-between;
-    flex-grow: 1; /* Allow the navigation items to grow and fill the available space */
+    justify-content: space-evenly;
   }
   
- nav li {
-  margin-right: 20px;
-  text-align: center;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }

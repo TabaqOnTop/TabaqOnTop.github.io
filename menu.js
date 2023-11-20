@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const burgerMenu = document.querySelector(".burger-menu");
-    const navMenu = document.querySelector(".nav-menu");
-
-    burgerMenu.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
-    });
-});
+window.addEventListener('scroll', function() {
+    var header = document.getElementById('header');
+    if (window.pageYOffset > 0) {
+      header.classList.add('scroll');
+    } else {
+      header.classList.remove('scroll');
+    }
+  });
