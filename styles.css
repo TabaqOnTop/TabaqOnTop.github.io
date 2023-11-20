@@ -20,27 +20,39 @@
     --robin-egg-blue: #07CCD1ff;
     --indigo-dye: #144F6Cff;
 }
+
 body{
     margin:0px;
 }
 header {
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 15px;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    overflow: visible;
   }
   
   .logo {
     position: absolute;
-    top: 5%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20px; /* Adjust the font size as needed */
+    /*font-size: 20px; /* Adjust the font size as needed */
     padding: 10px; /* Adjust the padding as needed */
     z-index: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Add this line for the circular shape */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the box-shadow values as needed */
+    margin:0px;
+    padding: 0px;
+    padding-bottom: -5px;
   }
   
   .logo img {
-    max-width: 80px;
+    max-width: 100px;
   }
   
   nav ul {
