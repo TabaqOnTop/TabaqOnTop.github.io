@@ -1,196 +1,68 @@
 /* Reset some default styles for better consistency */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
+:root{
+    --primary-100:#00CED1;
+    --primary-200:#00b0b3;
+    --primary-300:#006d72;
+    --accent-100:#7FFFD4;
+    --accent-200:#009974;
+    --text-100:#000000;
+    --text-200:#2c2c2c;
+    --bg-100:#E0FFFF;
+    --bg-200:#d6f5f5;
+    --bg-300:#aecccc;
+    /* CSS HEX */
+    --robin-egg-blue: #06CACFff;
+    --robin-egg-blue-2: #07D2D0ff;
+    --indigo-dye: #0B3F59ff;
+    --robin-egg-blue-3: #00BFCBff;
+    --rich-black: #0F1F2Bff;
+/* CSS HEX */
+    --robin-egg-blue: #07CCD1ff;
+    --indigo-dye: #144F6Cff;
 }
+  body {
+    margin: 0; /* Reset body margin */
+  }
 
-/* Header Styles */
-header {
+  
+  header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 25px;
+    margin: 0; /* Remove margins */
+  }
+  
+  
+  .logo {
+    position: absolute;
+    top: 10%; /* Adjust the value to control the overflow */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo img {
+    max-width: 80px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    width: 100px;
-    height: auto;
-    margin-left: 10%;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
+    flex-grow: 1; /* Allow the navigation items to grow and fill the available space */
+  }
+  
+ nav li {
+  margin-right: 20px;
+  text-align: center;
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* Hero Section Styles */
-.hero {
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-    color: #fff;
-}
-
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 40px;
-}
-
-.cta-button {
-    background-color: #ff5722;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #ff7746;
-}
-
-/* Image Section Styles */
-.image-section {
-    display: flex;
-    justify-content: space-around;
-    margin: 40px 0;
-}
-
-.image-section img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Introduction Section Styles */
-.introduction {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.introduction h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Testimonials Section Styles */
-.testimonials {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-.testimonial {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.testimonial p {
-    font-size: 18px;
-}
-
-.customer {
-    font-weight: bold;
-}
-
-/* Featured Providers Section Styles */
-.featured-providers {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-.provider img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.provider p {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-
-/* Add this to your existing CSS or create a new CSS file */
-
-/* Burger Menu Button Styles */
-.burger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 10px;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-}
-
-.bar {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-/* Styles for the navigation menu */
-.nav-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 999;
-    text-align: center;
-    padding-top: 80px;
-}
-
-.nav-menu a {
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin: 20px;
-    transition: 0.3s;
-}
-
-.nav-menu a:hover {
-    color: #ff5722;
+  color: #fff;
+  text-decoration: none;
 }
